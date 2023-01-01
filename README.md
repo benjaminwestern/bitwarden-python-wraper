@@ -15,8 +15,8 @@ https://bitwarden.com/help/vault-management-api/
 ## Requirements:
 1. Must have a Bitwarden account
 2. Install Bitwarden CLI using Homebrew (brew install bitwarden-cli) or download from here (Bitwarden CLI)[https://bitwarden.com/help/cli/#download-and-install]
-3. Authenticate to Bitwarden CLI (Enter Email, Master Password and TOTP if enabled)
-4. Confirm you can run `bw` commands from the command line (e.g. `bw list items --pretty` <-- Pretty is added here to make the output more readable)
+3. Authenticate to Bitwarden CLI using bw login (or other authentication methods listed here (Bitwarden CLI)[https://bitwarden.com/help/cli/#login])
+4. Confirm you can run `bw` commands from your terminal (e.g. `bw list items --pretty` <-- Pretty is added here to make the output more readable - More options can be found here (Bitwarden CLI)[https://bitwarden.com/help/cli/#list])
 This will return an array of objects if you have items in your vault. The output will look something like this:
 ```json
   [
