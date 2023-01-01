@@ -3,13 +3,14 @@
 # bitwarden-python-wraper
 A Python wrapper for the BitWarden CLI and Local REST API to remove the need for ENV files and use the BitWarden CLI to retrieve secrets, usernames and passwords.
 
-## CLI Reference Documentation
+## Reference Documentation
+### Bitwarden CLI Documentation
 https://bitwarden.com/help/cli/#get
 
-## REST API Reference Documentation
+### REST API Reference Documentation - NOT IN USE FOR THIS WRAPPER YET
 https://bitwarden.com/help/article/api/
 
-## Vault Management Documentation
+### Vault Management Documentation
 https://bitwarden.com/help/vault-management-api/
 
 ## Requirements:
