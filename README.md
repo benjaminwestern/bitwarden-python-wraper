@@ -1,6 +1,7 @@
+# THIS IS A WORK IN PROGRESS AND IS NOT READY FOR USE
+
 # bitwarden-python-wraper
 A Python wrapper for the BitWarden CLI and Local REST API to remove the need for ENV files
-
 
 ## CLI Reference Documentation
 https://bitwarden.com/help/cli/#get
