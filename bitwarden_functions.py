@@ -121,3 +121,25 @@ def get_fingerprint():
     payload = ""
     response = send_bitwarden_request("GET", request_url, payload, headers)
     return response.json()['data']
+
+def get_items(organisation_id=None, collection_id=None, folder_id=None, search=None, url=None, trash=False):
+    endpoint = f"/list/object/items"
+    request_url = construct_request_url(endpoint)
+    headers = construct_headers_list()
+    payload = ""
+    params = {
+        "search": search,
+        "trash": trash
+    }
+
+    if folder_id is not None:
+        params["folderid"] = folder_id
+    if organisation_id is not None:
+        params["organizationid"] = organisation_id
+    if collection_id is not None:
+        params["collectionid"] = collection_id
+    if url is not None:
+        params["url"] = url
+
+    response = send_bitwarden_request("GET", request_url, payload, headers, params)
+    return response.json()['data']['data']

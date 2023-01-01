@@ -6,12 +6,14 @@ if __name__ == "__main__":
     unlock_bitwarden()
 
     # Status / Helper Functions:
-    print(get_endpoint_sample_response('item.login'))
-    print(get_endpoint_sample_response('item.secureNote'))
-    print(get_bitwarden_status().json()['data'])
-    print(generate_password())
-    print(sync_vault())
-    print(get_fingerprint())
+    # print(get_endpoint_sample_response('item.login'))
+    # print(get_endpoint_sample_response('item.secureNote'))
+    # print(get_bitwarden_status().json()['data'])
+    # print(generate_password())
+    # print(sync_vault())
+    # print(get_fingerprint())
+    print(get_items())
+
 
     # Example sample response:
     # Source: https://bitwarden.com/help/vault-management-api/
